@@ -1,0 +1,33 @@
+.sideMenu {
+    position: absolute;
+    height: 100vh;
+    width: 17.5rem;
+    padding: 1rem;
+    background-color: var(--panel-background);
+    border-left: 3px solid var(--border-color);
+    right: 0em;
+    pointer-events: auto;
+    transition: transform .7s ease-in-out;
+}
+
+.sideMenu.open {
+    transform: translateX(0);
+}
+
+.sideMenu.closed {
+    transform: translatex(100%);
+}
+
+.menuIcon {
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--border-color);
+    font-size: 1rem;
+    border: none;
+    margin: 0.9rem;
+    padding: 0.1rem;
+}
+
+.menuIcon:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.menu {
+    --transition-duration: .35s;
+    overflow: hidden;
+    border-bottom: 0px solid var(--border-color);
+    transition: border-bottom var(--transition-duration) ease-out;
+}
+
+.expandButton {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.expandButton:hover {
+    color: var(--border-color);
+}
+
+.menuContent {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows var(--transition-duration) ease-out;
+}
+
+.menu.open .menuContent {
+    grid-template-rows: 1fr;
+}
+
+.menu.open {
+    border-bottom: 3px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.menuContent > * {
+    overflow: hidden;
+}

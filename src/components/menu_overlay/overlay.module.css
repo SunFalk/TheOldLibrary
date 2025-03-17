@@ -1,0 +1,28 @@
+.overlayWrapper {
+    --fade-duration: 0.7s;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    opacity: 0.0;
+    z-index: 10;
+    pointer-events: none;
+    transition: opacity var(--fade-duration) ease-in-out;
+}
+
+.open {
+    opacity: 1.0;
+    pointer-events: auto;
+}
+
+.closed {
+    opacity: 0.0;
+}
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}

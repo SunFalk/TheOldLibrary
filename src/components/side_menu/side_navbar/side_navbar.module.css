@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden;
+}
+
+@keyframes deactivate {
+    from {
+        display: flex;
+    }
+
+    to {
+        display: none;
+    }
+}
+
+.inactive {
+    animation: deactivate .5s ease-out forwards;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--border-color);
+}
+
+.dropdown {
+    overflow: hidden;
+}
