@@ -3,7 +3,7 @@ import { NextResponse as res} from 'next/server';
 
 const openai = new OpenAI({
     baseURL: "https://openrouter.ai/api/v1",
-    apiKey: "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",
+    apiKey: process.env.OPENROUTER_KEY || '',
 });
 
 export function GET(req) {
