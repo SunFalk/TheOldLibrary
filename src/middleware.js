@@ -1,6 +1,5 @@
 import { NextResponse as res } from 'next/server';
 import { cookies } from 'next/headers';
-import { textToURL } from '@/utils/url_format';
 
 async function hasSession() {
     const cookieStore = await cookies();
